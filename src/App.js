@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import Craousel from './components/Craousel';
+import Cards from './components/Cards';
+import LatestPost from './components/LatestPost';
+import PopularPost from './components/PopularPost';
+import Profile from './components/Profile';
+import RandomPost from './components/RandomPost';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Craousel/>
+      <Cards/>
+      <LatestPost/>
+      <PopularPost/>
+      <Profile/>
+      <RandomPost/>
     </div>
   );
 }
